@@ -6,13 +6,13 @@
 mkdir /media/blmaster
 mkdir /media/mountmaster
 sudo umount /media/blmaster
-sudo dislocker -V /dev/sdb5 -u -- /media/blmaster
+sudo dislocker -V /dev/sdc5 -u -- /media/blmaster
 cd /media/blmaster
 sudo mount -o loop dislocker-file /media/mountmaster
 
 mkdir /media/blblue
 mkdir /media/mountblue
 sudo umount /media/blblue
-sudo dislocker -V /dev/sdb7 -u -- /media/blblue
+sudo dislocker -V /dev/sdc7 -u -- /media/blblue
 cd /media/blblue
 sudo mount -o loop dislocker-file /media/mountblue
