@@ -1,7 +1,7 @@
 #! /bin/bash
 
 read_var() {
-    VAR=$(grep $1 $2 | xargs -d '\n')
+    VAR=$(grep -i $2 $1 | xargs -d '\n')
     IFS="=" read -ra VAR <<< "$VAR"
     echo ${VAR[1]}
 }
